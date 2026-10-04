@@ -1,0 +1,375 @@
+[
+  {
+    "name": "ESP32-WROOM-32",
+    "part_number": "ESP32-WROOM-32",
+    "manufacturer": "Espressif",
+    "category": "microcontrollers",
+    "subcategory": "WiFi_Bluetooth_MCU",
+    "description": "Wi-Fi and Bluetooth enabled 32-bit microcontroller module for IoT, robotics, automation, and embedded control.",
+    "functions": [
+      "general embedded control",
+      "wireless communication",
+      "sensor interfacing",
+      "motor control",
+      "IoT connectivity"
+    ],
+    "applications": [
+      "robotics",
+      "IoT",
+      "home automation",
+      "wireless sensor nodes",
+      "mobile robots"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "DAC",
+      "PWM",
+      "UART",
+      "SPI",
+      "I2C",
+      "I2S"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "3.3V",
+      "operating_voltage": "3.0-3.6V",
+      "input_voltage": "5V via development board",
+      "adc_channels": 18,
+      "adc_resolution_bits": 12
+    },
+    "physical_specs": {
+      "module_type": "wireless MCU module"
+    },
+    "performance_specs": {
+      "cpu": "dual-core Xtensa LX6",
+      "clock_frequency_mhz": 240,
+      "flash_mb": 4
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "wireless": [
+        "WiFi",
+        "Bluetooth",
+        "BLE"
+      ],
+      "logic_levels": [
+        "3.3V"
+      ],
+      "motor_control": true,
+      "sensor_interfaces": true,
+      "robotics": true
+    },
+    "constraints": {
+      "not_5v_logic_tolerant": true
+    },
+    "estimated_cost": 450,
+    "currency": "INR",
+    "availability": {
+      "status": "widely_available",
+      "development_boards": true
+    },
+    "alternatives": [
+      "ESP32-S3",
+      "ESP32-C3"
+    ],
+    "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf",
+    "documentation_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/"
+  },
+  {
+    "name": "ESP32-S3",
+    "part_number": "ESP32-S3-WROOM-1",
+    "manufacturer": "Espressif",
+    "category": "microcontrollers",
+    "subcategory": "WiFi_Bluetooth_MCU",
+    "description": "High-performance Wi-Fi and Bluetooth LE microcontroller with enhanced GPIO, USB, and AI-oriented vector instructions.",
+    "functions": [
+      "embedded control",
+      "wireless communication",
+      "sensor interfacing",
+      "motor control",
+      "edge AI"
+    ],
+    "applications": [
+      "robotics",
+      "computer vision controllers",
+      "IoT",
+      "edge AI",
+      "automation"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "PWM",
+      "UART",
+      "SPI",
+      "I2C",
+      "USB"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "3.3V",
+      "operating_voltage": "3.0-3.6V",
+      "adc_channels": 20,
+      "adc_resolution_bits": 12
+    },
+    "physical_specs": {
+      "module_type": "wireless MCU module"
+    },
+    "performance_specs": {
+      "cpu": "dual-core Xtensa LX7",
+      "clock_frequency_mhz": 240,
+      "flash_mb": 8
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "wireless": [
+        "WiFi",
+        "BLE"
+      ],
+      "logic_levels": [
+        "3.3V"
+      ],
+      "motor_control": true,
+      "sensor_interfaces": true,
+      "usb": true,
+      "edge_ai": true
+    },
+    "constraints": {
+      "not_5v_logic_tolerant": true
+    },
+    "estimated_cost": 550,
+    "currency": "INR",
+    "availability": {
+      "status": "widely_available",
+      "development_boards": true
+    },
+    "alternatives": [
+      "ESP32-WROOM-32",
+      "ESP32-C6"
+    ],
+    "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+    "documentation_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/"
+  },
+  {
+    "name": "ESP32-C3",
+    "part_number": "ESP32-C3-WROOM-02",
+    "manufacturer": "Espressif",
+    "category": "microcontrollers",
+    "subcategory": "low_power_MCU",
+    "description": "Low-power Wi-Fi and Bluetooth LE RISC-V microcontroller suitable for connected embedded systems.",
+    "functions": [
+      "embedded control",
+      "wireless communication",
+      "sensor interfacing",
+      "IoT control"
+    ],
+    "applications": [
+      "IoT",
+      "wireless sensors",
+      "smart devices",
+      "automation",
+      "low-power robotics"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "PWM",
+      "UART",
+      "SPI",
+      "I2C"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "3.3V",
+      "operating_voltage": "3.0-3.6V",
+      "adc_channels": 6,
+      "adc_resolution_bits": 12
+    },
+    "physical_specs": {
+      "module_type": "wireless MCU module"
+    },
+    "performance_specs": {
+      "cpu": "32-bit RISC-V single-core",
+      "clock_frequency_mhz": 160,
+      "flash_mb": 4
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "wireless": [
+        "WiFi",
+        "BLE"
+      ],
+      "logic_levels": [
+        "3.3V"
+      ],
+      "motor_control": true,
+      "sensor_interfaces": true
+    },
+    "constraints": {
+      "not_5v_logic_tolerant": true,
+      "lower_performance_than_esp32_s3": true
+    },
+    "estimated_cost": 350,
+    "currency": "INR",
+    "availability": {
+      "status": "widely_available",
+      "development_boards": true
+    },
+    "alternatives": [
+      "ESP32-WROOM-32",
+      "ESP32-S3"
+    ],
+    "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+    "documentation_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/"
+  },
+  {
+    "name": "Arduino Mega 2560",
+    "part_number": "A000067",
+    "manufacturer": "Arduino",
+    "category": "microcontrollers",
+    "subcategory": "general_purpose_MCU",
+    "description": "ATmega2560 based development board with a large number of GPIO pins and serial interfaces.",
+    "functions": [
+      "embedded control",
+      "sensor interfacing",
+      "motor control",
+      "actuator control"
+    ],
+    "applications": [
+      "robotics",
+      "automation",
+      "3D printers",
+      "educational robotics",
+      "large I/O control systems"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "PWM",
+      "UART",
+      "SPI",
+      "I2C"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "5V",
+      "operating_voltage": "5V",
+      "input_voltage": "7-12V recommended",
+      "digital_io_pins": 54,
+      "pwm_pins": 15,
+      "adc_channels": 16,
+      "adc_resolution_bits": 10
+    },
+    "physical_specs": {
+      "board_type": "development board"
+    },
+    "performance_specs": {
+      "cpu": "ATmega2560",
+      "clock_frequency_mhz": 16,
+      "flash_kb": 256,
+      "sram_kb": 8
+    },
+    "environmental_specs": {
+      "operating_temperature": "typical embedded environment"
+    },
+    "compatibility": {
+      "wireless": [],
+      "logic_levels": [
+        "5V"
+      ],
+      "motor_control": true,
+      "sensor_interfaces": true,
+      "large_gpio_count": true
+    },
+    "constraints": {
+      "no_integrated_wifi": true,
+      "no_integrated_bluetooth": true,
+      "lower_processing_performance": true
+    },
+    "estimated_cost": 1800,
+    "currency": "INR",
+    "availability": {
+      "status": "widely_available",
+      "development_boards": true
+    },
+    "alternatives": [
+      "ESP32-WROOM-32",
+      "Arduino Uno R4 WiFi"
+    ],
+    "datasheet_url": "https://docs.arduino.cc/resources/datasheets/A000067-datasheet.pdf",
+    "documentation_url": "https://docs.arduino.cc/hardware/mega-2560/"
+  },
+  {
+    "name": "STM32F401RE",
+    "part_number": "STM32F401RE",
+    "manufacturer": "STMicroelectronics",
+    "category": "microcontrollers",
+    "subcategory": "high_performance_MCU",
+    "description": "32-bit ARM Cortex-M4 microcontroller suitable for real-time embedded control and robotics.",
+    "functions": [
+      "real-time control",
+      "sensor interfacing",
+      "motor control",
+      "signal processing"
+    ],
+    "applications": [
+      "robotics",
+      "motor controllers",
+      "industrial automation",
+      "embedded control"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "PWM",
+      "UART",
+      "SPI",
+      "I2C"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "3.3V",
+      "operating_voltage": "1.7-3.6V",
+      "adc_channels": 16,
+      "adc_resolution_bits": 12
+    },
+    "physical_specs": {
+      "package": "LQFP64"
+    },
+    "performance_specs": {
+      "cpu": "ARM Cortex-M4",
+      "clock_frequency_mhz": 84,
+      "flash_kb": 512,
+      "sram_kb": 96
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": [
+        "3.3V"
+      ],
+      "motor_control": true,
+      "sensor_interfaces": true,
+      "real_time_control": true
+    },
+    "constraints": {
+      "no_integrated_wifi": true,
+      "no_integrated_bluetooth": true
+    },
+    "estimated_cost": 700,
+    "currency": "INR",
+    "availability": {
+      "status": "widely_available",
+      "development_boards": true
+    },
+    "alternatives": [
+      "STM32F411",
+      "ESP32-S3"
+    ],
+    "datasheet_url": "https://www.st.com/resource/en/datasheet/stm32f401re.pdf",
+    "documentation_url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f4-series.html"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "name": "ESP32-S3",
+    "part_number": "ESP32-S3-WROOM-1",
+    "manufacturer": "Espressif",
+    "category": "microcontroller",
+    "subcategory": "WiFi_Bluetooth_MCU",
+    "description": "Dual-core microcontroller with Wi-Fi and Bluetooth LE.",
+    "functions": [
+      "Microcontroller",
+      "WiFi communication",
+      "Bluetooth communication",
+      "GPIO control"
+    ],
+    "applications": [
+      "Robotics",
+      "IoT",
+      "Automation"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "PWM",
+      "UART",
+      "I2C",
+      "SPI",
+      "WiFi",
+      "Bluetooth"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "3.3V",
+      "operating_voltage": "3.0-3.6V"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "cpu": "Dual-core Xtensa LX7",
+      "max_frequency_mhz": 240
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "logic_level": "3.3V",
+      "common_interfaces": [
+        "UART",
+        "I2C",
+        "SPI",
+        "PWM"
+      ]
+    },
+    "constraints": {},
+    "estimated_cost": 550,
+    "currency": "INR",
+    "availability": {
+      "status": "commonly_available"
+    },
+    "alternatives": [
+      "ESP32-WROOM-32",
+      "ESP32-C3"
+    ]
+  },
+  {
+    "name": "Arduino Mega 2560",
+    "part_number": "A000067",
+    "manufacturer": "Arduino",
+    "category": "microcontroller",
+    "subcategory": "ATmega_MCU",
+    "description": "Microcontroller board with a large number of digital and analog I/O pins.",
+    "functions": [
+      "Microcontroller",
+      "GPIO control",
+      "PWM control"
+    ],
+    "applications": [
+      "Robotics",
+      "Automation",
+      "Education",
+      "Embedded systems"
+    ],
+    "interfaces": [
+      "GPIO",
+      "ADC",
+      "PWM",
+      "UART",
+      "I2C",
+      "SPI"
+    ],
+    "electrical_specs": {
+      "logic_voltage": "5V",
+      "operating_voltage": "5V"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "cpu": "ATmega2560",
+      "max_frequency_mhz": 16
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "logic_level": "5V",
+      "common_interfaces": [
+        "UART",
+        "I2C",
+        "SPI",
+        "PWM"
+      ]
+    },
+    "constraints": {},
+    "estimated_cost": 1800,
+    "currency": "INR",
+    "availability": {
+      "status": "commonly_available"
+    },
+    "alternatives": [
+      "Arduino Uno",
+      "ESP32-S3"
+    ]
+  }
+]

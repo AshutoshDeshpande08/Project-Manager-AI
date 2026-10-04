@@ -1,0 +1,321 @@
+{
+  "microcontrollers": {
+    "priority": "high",
+    "target_records": 100,
+    "subcategories": [
+      "WiFi_Bluetooth_MCU",
+      "general_purpose_MCU",
+      "low_power_MCU",
+      "high_performance_MCU",
+      "real_time_MCU",
+      "development_board"
+    ]
+  },
+
+  "sbc": {
+    "priority": "high",
+    "target_records": 75,
+    "subcategories": [
+      "general_purpose_SBC",
+      "AI_SBC",
+      "edge_computing",
+      "industrial_SBC",
+      "single_board_computer"
+    ]
+  },
+
+  "sensors": {
+    "priority": "very_high",
+    "target_records": 500,
+    "subcategories": [
+      "temperature",
+      "humidity",
+      "pressure",
+      "gas",
+      "air_quality",
+      "water_liquid",
+      "soil_agriculture",
+      "light_optical",
+      "proximity_IR",
+      "ultrasonic",
+      "ToF",
+      "LiDAR",
+      "IMU",
+      "accelerometer",
+      "gyroscope",
+      "magnetic_Hall",
+      "GPS_GNSS",
+      "current_voltage_power",
+      "force_load_cell",
+      "touch",
+      "rain",
+      "flame",
+      "motion",
+      "vibration",
+      "sound",
+      "color",
+      "encoder"
+    ]
+  },
+
+  "cameras": {
+    "priority": "high",
+    "target_records": 100,
+    "subcategories": [
+      "USB_camera",
+      "CSI_camera",
+      "depth_camera",
+      "stereo_camera",
+      "thermal_camera",
+      "IR_camera",
+      "machine_vision",
+      "AI_camera"
+    ]
+  },
+
+  "motors": {
+    "priority": "very_high",
+    "target_records": 250,
+    "subcategories": [
+      "DC_motor",
+      "DC_gear_motor",
+      "encoder_motor",
+      "BLDC_motor",
+      "stepper_motor",
+      "servo_motor",
+      "linear_actuator",
+      "vibration_motor"
+    ]
+  },
+
+  "motor_drivers": {
+    "priority": "very_high",
+    "target_records": 100,
+    "subcategories": [
+      "DC_motor_driver",
+      "dual_DC_driver",
+      "high_current_driver",
+      "BLDC_driver",
+      "stepper_driver",
+      "servo_driver"
+    ]
+  },
+
+  "servos": {
+    "priority": "high",
+    "target_records": 75,
+    "subcategories": [
+      "micro_servo",
+      "standard_servo",
+      "high_torque_servo",
+      "continuous_rotation_servo",
+      "digital_servo"
+    ]
+  },
+
+  "steppers": {
+    "priority": "high",
+    "target_records": 75,
+    "subcategories": [
+      "NEMA_stepper",
+      "mini_stepper",
+      "geared_stepper",
+      "stepper_motor"
+    ]
+  },
+
+  "power": {
+    "priority": "very_high",
+    "target_records": 250,
+    "subcategories": [
+      "buck_converter",
+      "boost_converter",
+      "buck_boost_converter",
+      "linear_regulator",
+      "LDO",
+      "DC_DC_converter",
+      "AC_DC_converter",
+      "power_distribution",
+      "voltage_reference",
+      "power_monitor"
+    ]
+  },
+
+  "batteries": {
+    "priority": "very_high",
+    "target_records": 150,
+    "subcategories": [
+      "Li_ion",
+      "LiPo",
+      "LiFePO4",
+      "NiMH",
+      "lead_acid",
+      "battery_pack",
+      "battery_holder",
+      "battery_management",
+      "charger",
+      "fuel_gauge"
+    ]
+  },
+
+  "communication": {
+    "priority": "high",
+    "target_records": 150,
+    "subcategories": [
+      "WiFi",
+      "Bluetooth",
+      "BLE",
+      "LoRa",
+      "Zigbee",
+      "RF",
+      "GSM",
+      "LTE",
+      "5G",
+      "GPS_GNSS",
+      "CAN",
+      "RS485",
+      "Ethernet",
+      "NFC"
+    ]
+  },
+
+  "passives": {
+    "priority": "medium",
+    "target_records": 500,
+    "subcategories": [
+      "resistor",
+      "capacitor",
+      "inductor",
+      "diode",
+      "LED",
+      "fuse",
+      "thermistor",
+      "potentiometer",
+      "crystal",
+      "oscillator"
+    ]
+  },
+
+  "connectors": {
+    "priority": "medium",
+    "target_records": 200,
+    "subcategories": [
+      "header",
+      "terminal_block",
+      "JST",
+      "XT_connector",
+      "USB",
+      "HDMI",
+      "RJ45",
+      "coaxial",
+      "circular_connector",
+      "automotive_connector"
+    ]
+  },
+
+  "wires": {
+    "priority": "medium",
+    "target_records": 100,
+    "subcategories": [
+      "hookup_wire",
+      "jumper_wire",
+      "ribbon_cable",
+      "shielded_cable",
+      "coaxial_cable",
+      "power_cable",
+      "communication_cable"
+    ]
+  },
+
+  "displays": {
+    "priority": "medium",
+    "target_records": 100,
+    "subcategories": [
+      "LCD",
+      "OLED",
+      "TFT",
+      "ePaper",
+      "LED_matrix",
+      "seven_segment",
+      "touchscreen"
+    ]
+  },
+
+  "relays": {
+    "priority": "medium",
+    "target_records": 75,
+    "subcategories": [
+      "electromechanical_relay",
+      "solid_state_relay",
+      "relay_module",
+      "automotive_relay"
+    ]
+  },
+
+  "protection": {
+    "priority": "high",
+    "target_records": 100,
+    "subcategories": [
+      "fuse",
+      "TVS",
+      "overvoltage_protection",
+      "overcurrent_protection",
+      "reverse_polarity",
+      "ESD_protection",
+      "surge_protection"
+    ]
+  },
+
+  "interface_ics": {
+    "priority": "high",
+    "target_records": 150,
+    "subcategories": [
+      "logic_level_converter",
+      "UART",
+      "USB",
+      "CAN",
+      "RS485",
+      "I2C",
+      "SPI",
+      "GPIO_expander",
+      "ADC",
+      "DAC",
+      "op_amp",
+      "comparator"
+    ]
+  },
+
+  "mechanical": {
+    "priority": "high",
+    "target_records": 300,
+    "subcategories": [
+      "gear",
+      "bearing",
+      "shaft",
+      "coupling",
+      "wheel",
+      "caster",
+      "bracket",
+      "linear_rail",
+      "belt",
+      "pulley",
+      "chain",
+      "screw",
+      "nut",
+      "spacer",
+      "mount"
+    ]
+  },
+
+  "audio": {
+    "priority": "low",
+    "target_records": 50,
+    "subcategories": [
+      "microphone",
+      "speaker",
+      "buzzer",
+      "audio_amplifier",
+      "audio_codec"
+    ]
+  }
+}

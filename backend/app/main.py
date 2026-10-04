@@ -6,7 +6,9 @@ from app.models.project import Project
 from app.models.recommendation import Recommendation
 from app.models.requirement import Requirement
 
+from app.api.components import router as components_router
 from app.api.projects import router as projects_router
+from app.api.recommendations import router as recommendations_router
 
 
 app = FastAPI(
@@ -17,6 +19,8 @@ app = FastAPI(
 
 
 app.include_router(projects_router)
+app.include_router(components_router)
+app.include_router(recommendations_router)
 
 
 @app.get("/")
