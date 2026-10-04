@@ -1,0 +1,681 @@
+[
+  {
+    "name": "L298N Dual H-Bridge Motor Driver",
+    "part_number": "L298N",
+    "manufacturer": "STMicroelectronics",
+    "category": "motor_drivers",
+    "subcategory": "dual_h_bridge",
+    "description": "Dual-channel bipolar motor driver suitable for controlling two brushed DC motors or one bipolar stepper motor.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control", "stepper_control"],
+    "applications": ["mobile robots", "robotic arms", "educational robotics", "automation"],
+    "interfaces": ["IN1", "IN2", "IN3", "IN4", "ENA", "ENB"],
+    "electrical_specs": {
+      "motor_voltage": "5-35V",
+      "logic_voltage": "5V",
+      "continuous_current_per_channel": "2A",
+      "peak_current_per_channel": "3A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 2,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc", "bipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "high_voltage_drop": true,
+      "heatsink_recommended": true
+    },
+    "estimated_cost": 120,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["L293D", "TB6612FNG"]
+  },
+  {
+    "name": "L293D Quad Half-H Driver",
+    "part_number": "L293D",
+    "manufacturer": "STMicroelectronics",
+    "category": "motor_drivers",
+    "subcategory": "quad_half_h_bridge",
+    "description": "Four-channel half-H motor driver for small DC motors and stepper motor applications.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control", "stepper_control"],
+    "applications": ["educational robotics", "small robots", "automation"],
+    "interfaces": ["IN1", "IN2", "IN3", "IN4", "EN1", "EN2"],
+    "electrical_specs": {
+      "motor_voltage": "4.5-36V",
+      "logic_voltage": "5V",
+      "continuous_current_per_channel": "600mA",
+      "peak_current_per_channel": "1.2A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 4,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc", "bipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "low_current_capacity": true,
+      "voltage_drop": true
+    },
+    "estimated_cost": 80,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["L298N", "TB6612FNG"]
+  },
+  {
+    "name": "TB6612FNG Dual Motor Driver",
+    "part_number": "TB6612FNG",
+    "manufacturer": "Toshiba",
+    "category": "motor_drivers",
+    "subcategory": "dual_h_bridge",
+    "description": "Compact MOSFET-based dual DC motor driver with low voltage loss and PWM control.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control"],
+    "applications": ["mobile robots", "line followers", "robotic platforms", "educational robotics"],
+    "interfaces": ["AIN1", "AIN2", "PWMA", "BIN1", "BIN2", "PWMB", "STBY"],
+    "electrical_specs": {
+      "motor_voltage": "4.5-13.5V",
+      "logic_voltage": "2.7-5.5V",
+      "continuous_current_per_channel": "1.2A",
+      "peak_current_per_channel": "3.2A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 2,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true,
+      "esp32_compatible": true
+    },
+    "constraints": {
+      "current_limit_per_channel": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["DRV8833", "DRV8871"]
+  },
+  {
+    "name": "DRV8833 Dual H-Bridge Motor Driver",
+    "part_number": "DRV8833",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "dual_h_bridge",
+    "description": "Low-voltage dual H-bridge driver optimized for compact battery-powered robotics.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control"],
+    "applications": ["small mobile robots", "battery robots", "portable automation"],
+    "interfaces": ["AIN1", "AIN2", "BIN1", "BIN2"],
+    "electrical_specs": {
+      "motor_voltage": "2.7-10.8V",
+      "logic_voltage": "2.7-5.5V",
+      "continuous_current_per_channel": "1.5A",
+      "peak_current_per_channel": "2A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 2,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc", "bipolar_stepper"],
+      "microcontroller_logic": true,
+      "esp32_compatible": true
+    },
+    "constraints": {
+      "low_motor_voltage_range": true
+    },
+    "estimated_cost": 220,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["TB6612FNG"]
+  },
+  {
+    "name": "DRV8871 DC Motor Driver",
+    "part_number": "DRV8871",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "single_h_bridge",
+    "description": "Single-channel high-current brushed DC motor driver with integrated current regulation.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control", "current_control"],
+    "applications": ["robotic platforms", "automation", "actuators"],
+    "interfaces": ["IN1", "IN2"],
+    "electrical_specs": {
+      "motor_voltage": "6.5-45V",
+      "logic_voltage": "2.7-5.5V",
+      "continuous_current": "3.6A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 1,
+      "pwm_control": true,
+      "current_regulation": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true,
+      "esp32_compatible": true
+    },
+    "constraints": {
+      "single_motor_channel": true
+    },
+    "estimated_cost": 350,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["BTS7960"]
+  },
+  {
+    "name": "BTS7960 High Current Motor Driver",
+    "part_number": "BTS7960",
+    "manufacturer": "Infineon",
+    "category": "motor_drivers",
+    "subcategory": "high_current_h_bridge",
+    "description": "High-current half-bridge module commonly configured as an H-bridge for large brushed DC motors.",
+    "functions": ["dc_motor_control", "high_current_motor_control", "direction_control", "speed_control"],
+    "applications": ["large mobile robots", "robotic vehicles", "actuators"],
+    "interfaces": ["RPWM", "LPWM", "R_EN", "L_EN"],
+    "electrical_specs": {
+      "motor_voltage": "5.5-27V",
+      "logic_voltage": "3.3-5V",
+      "continuous_current": "43A",
+      "peak_current": "100A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 1,
+      "pwm_control": true,
+      "high_current": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "large_module": true,
+      "high_current_power_supply_required": true
+    },
+    "estimated_cost": 450,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["VNH2SP30"]
+  },
+  {
+    "name": "VNH2SP30 Motor Driver",
+    "part_number": "VNH2SP30",
+    "manufacturer": "STMicroelectronics",
+    "category": "motor_drivers",
+    "subcategory": "high_current_h_bridge",
+    "description": "High-current full bridge driver for demanding brushed DC motor applications.",
+    "functions": ["dc_motor_control", "high_current_motor_control", "direction_control", "speed_control"],
+    "applications": ["robotic vehicles", "mobile robots", "high-power automation"],
+    "interfaces": ["INA", "INB", "PWM", "EN"],
+    "electrical_specs": {
+      "motor_voltage": "5.5-16V",
+      "logic_voltage": "5V",
+      "continuous_current": "14A",
+      "peak_current": "30A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 1,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "high_current_supply_required": true
+    },
+    "estimated_cost": 550,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["BTS7960"]
+  },
+  {
+    "name": "DRV8825 Stepper Motor Driver",
+    "part_number": "DRV8825",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "stepper_driver",
+    "description": "Microstepping stepper motor driver suitable for NEMA-class bipolar stepper motors.",
+    "functions": ["stepper_control", "microstepping", "current_control"],
+    "applications": ["3D printers", "CNC machines", "robotic arms", "linear stages"],
+    "interfaces": ["STEP", "DIR", "ENABLE"],
+    "electrical_specs": {
+      "motor_voltage": "8.2-45V",
+      "logic_voltage": "2.5-5.25V",
+      "output_current": "2.2A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "microstepping": "1/32",
+      "current_regulation": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "heatsink_recommended_at_high_current": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["A4988", "TMC2209"]
+  },
+  {
+    "name": "A4988 Stepper Motor Driver",
+    "part_number": "A4988",
+    "manufacturer": "Allegro MicroSystems",
+    "category": "motor_drivers",
+    "subcategory": "stepper_driver",
+    "description": "Compact microstepping driver for bipolar stepper motors.",
+    "functions": ["stepper_control", "microstepping", "current_control"],
+    "applications": ["3D printers", "CNC machines", "robotics", "linear actuators"],
+    "interfaces": ["STEP", "DIR", "ENABLE"],
+    "electrical_specs": {
+      "motor_voltage": "8-35V",
+      "logic_voltage": "3.3-5V",
+      "output_current": "1A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "microstepping": "1/16",
+      "current_regulation": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "heatsink_recommended": true
+    },
+    "estimated_cost": 150,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["DRV8825", "TMC2209"]
+  },
+  {
+    "name": "TMC2209 Stepper Motor Driver",
+    "part_number": "TMC2209",
+    "manufacturer": "Trinamic",
+    "category": "motor_drivers",
+    "subcategory": "silent_stepper_driver",
+    "description": "Advanced low-noise stepper driver with high-resolution microstepping and UART configuration.",
+    "functions": ["stepper_control", "microstepping", "current_control", "silent_operation"],
+    "applications": ["3D printers", "CNC machines", "robotics", "precision mechanisms"],
+    "interfaces": ["STEP", "DIR", "UART", "ENABLE"],
+    "electrical_specs": {
+      "motor_voltage": "4.75-29V",
+      "logic_voltage": "3.3-5V",
+      "output_current": "2A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "microstepping": "1/256",
+      "uart_configuration": true,
+      "stealth_operation": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "configuration_complexity": "medium"
+    },
+    "estimated_cost": 450,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["DRV8825", "A4988"]
+  },
+  {
+    "name": "TMC5160 Stepper Motor Driver",
+    "part_number": "TMC5160",
+    "manufacturer": "Trinamic",
+    "category": "motor_drivers",
+    "subcategory": "high_performance_stepper_driver",
+    "description": "High-performance stepper controller and driver for demanding motion-control applications.",
+    "functions": ["stepper_control", "microstepping", "current_control", "motion_control"],
+    "applications": ["CNC machines", "robotic arms", "industrial automation"],
+    "interfaces": ["STEP", "DIR", "SPI", "UART"],
+    "electrical_specs": {
+      "motor_voltage": "8-60V",
+      "logic_voltage": "3.3V",
+      "output_current": "3A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "microstepping": "1/256",
+      "spi_configuration": true,
+      "closed_loop_features": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "higher_cost": true,
+      "advanced_configuration_required": true
+    },
+    "estimated_cost": 1200,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["TMC2209", "DRV8825"]
+  },
+  {
+    "name": "ULN2003 Darlington Driver",
+    "part_number": "ULN2003A",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "darlington_array",
+    "description": "Seven-channel transistor array commonly used to drive small unipolar stepper motors and relays.",
+    "functions": ["stepper_control", "relay_control", "low_power_motor_control"],
+    "applications": ["28BYJ-48", "small automation", "relay systems", "educational robotics"],
+    "interfaces": ["IN1", "IN2", "IN3", "IN4", "IN5", "IN6", "IN7"],
+    "electrical_specs": {
+      "output_voltage": "50V",
+      "output_current_per_channel": "500mA"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 7
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["unipolar_stepper"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "high_voltage_drop": true,
+      "low_current_capacity": true
+    },
+    "estimated_cost": 40,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["ULN2803A"]
+  },
+  {
+    "name": "PCA9685 16-Channel PWM Driver",
+    "part_number": "PCA9685",
+    "manufacturer": "NXP",
+    "category": "motor_drivers",
+    "subcategory": "servo_pwm_driver",
+    "description": "16-channel I2C PWM controller commonly used to control multiple hobby servos.",
+    "functions": ["servo_control", "pwm_generation", "multi_channel_control"],
+    "applications": ["robotic arms", "humanoid robots", "servo platforms", "automation"],
+    "interfaces": ["I2C"],
+    "electrical_specs": {
+      "logic_voltage": "2.3-5.5V",
+      "servo_voltage": "up to 6V"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 16,
+      "pwm_resolution": "12-bit"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["servo"],
+      "i2c_controller_required": true,
+      "esp32_compatible": true
+    },
+    "constraints": {
+      "external_servo_power_required": true
+    },
+    "estimated_cost": 150,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["PCA9685 Servo Driver"]
+  },
+  {
+    "name": "ESC 30A Brushless Motor Controller",
+    "part_number": "ESC-30A",
+    "manufacturer": "Generic",
+    "category": "motor_drivers",
+    "subcategory": "bldc_esc",
+    "description": "Electronic speed controller for three-phase brushless DC motors.",
+    "functions": ["bldc_control", "speed_control", "propulsion_control"],
+    "applications": ["drones", "RC vehicles", "robotic propulsion"],
+    "interfaces": ["PWM"],
+    "electrical_specs": {
+      "input_voltage": "2S-4S LiPo",
+      "continuous_current": "30A",
+      "peak_current": "40A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "motor_phases": 3,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bldc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "battery_current_capacity_required": true
+    },
+    "estimated_cost": 600,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["ESC 40A"]
+  },
+  {
+    "name": "ESC 40A Brushless Motor Controller",
+    "part_number": "ESC-40A",
+    "manufacturer": "Generic",
+    "category": "motor_drivers",
+    "subcategory": "bldc_esc",
+    "description": "Higher-current electronic speed controller for brushless motors used in aerial and mobile platforms.",
+    "functions": ["bldc_control", "speed_control", "propulsion_control"],
+    "applications": ["drones", "RC vehicles", "robotic vehicles"],
+    "interfaces": ["PWM"],
+    "electrical_specs": {
+      "input_voltage": "2S-6S LiPo",
+      "continuous_current": "40A",
+      "peak_current": "50A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "motor_phases": 3,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bldc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "high_current_power_supply_required": true
+    },
+    "estimated_cost": 750,
+    "currency": "INR",
+    "availability": {"status": "high"},
+    "alternatives": ["ESC 30A"]
+  },
+  {
+    "name": "DRV10983 BLDC Motor Driver",
+    "part_number": "DRV10983",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "bldc_driver_ic",
+    "description": "Three-phase sensorless BLDC motor driver IC with integrated MOSFETs and speed control.",
+    "functions": ["bldc_control", "speed_control", "sensorless_commutation"],
+    "applications": ["fans", "pumps", "robotic mechanisms", "small automation"],
+    "interfaces": ["PWM", "FG", "I2C"],
+    "electrical_specs": {
+      "motor_voltage": "8-28V",
+      "output_current": "1.5A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "motor_phases": 3,
+      "sensorless_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bldc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "sensorless_motor_startup_requirements": true
+    },
+    "estimated_cost": 500,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["Generic BLDC ESC"]
+  },
+  {
+    "name": "MC33926 Dual Motor Driver",
+    "part_number": "MC33926",
+    "manufacturer": "NXP",
+    "category": "motor_drivers",
+    "subcategory": "dual_high_current_driver",
+    "description": "Dual high-current brushed DC motor driver suitable for mobile robots and automotive-style loads.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control", "current_feedback"],
+    "applications": ["mobile robots", "robotic vehicles", "automation"],
+    "interfaces": ["IN1", "IN2", "PWM", "EN", "FB"],
+    "electrical_specs": {
+      "motor_voltage": "5-28V",
+      "continuous_current_per_channel": "2.8A",
+      "peak_current_per_channel": "5A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 2,
+      "pwm_control": true,
+      "current_feedback": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "thermal_management_required_at_high_current": true
+    },
+    "estimated_cost": 650,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["TB6612FNG", "BTS7960"]
+  },
+  {
+    "name": "DRV8701 Brushed DC Gate Driver",
+    "part_number": "DRV8701",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "external_mosfet_gate_driver",
+    "description": "Brushed DC motor gate driver designed to control an external MOSFET H-bridge for high-current systems.",
+    "functions": ["dc_motor_control", "high_current_motor_control", "direction_control", "speed_control"],
+    "applications": ["robotic vehicles", "industrial automation", "high-power actuators"],
+    "interfaces": ["PWM", "IN1", "IN2", "SPI"],
+    "electrical_specs": {
+      "motor_voltage": "5.9-45V",
+      "logic_voltage": "2.5-5.5V"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 1,
+      "external_mosfets_required": true,
+      "current_regulation": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "external_mosfets_required": true,
+      "design_complexity": "high"
+    },
+    "estimated_cost": 400,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["DRV8871", "BTS7960"]
+  },
+  {
+    "name": "DRV8313 Triple Half-Bridge Driver",
+    "part_number": "DRV8313",
+    "manufacturer": "Texas Instruments",
+    "category": "motor_drivers",
+    "subcategory": "triple_half_bridge",
+    "description": "Three-channel half-bridge driver suitable for three-phase BLDC and other multi-channel motor applications.",
+    "functions": ["bldc_control", "three_phase_control", "dc_motor_control"],
+    "applications": ["BLDC robotics", "automation", "actuators"],
+    "interfaces": ["IN1", "IN2", "IN3", "PWM"],
+    "electrical_specs": {
+      "motor_voltage": "8-60V",
+      "output_current_per_channel": "2.5A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 3,
+      "three_phase_output": true,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["bldc", "brushed_dc"],
+      "microcontroller_logic": true
+    },
+    "constraints": {
+      "external_commutation_control_required": true
+    },
+    "estimated_cost": 700,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["DRV10983", "BLDC ESC"]
+  },
+  {
+    "name": "TB67H450FNG Single H-Bridge Motor Driver",
+    "part_number": "TB67H450FNG",
+    "manufacturer": "Toshiba",
+    "category": "motor_drivers",
+    "subcategory": "single_h_bridge",
+    "description": "Single-channel brushed DC motor driver designed for higher-voltage robotic and automation applications.",
+    "functions": ["dc_motor_control", "direction_control", "speed_control"],
+    "applications": ["mobile robots", "robotic platforms", "automation systems"],
+    "interfaces": ["IN1", "IN2", "PWM"],
+    "electrical_specs": {
+      "motor_voltage": "4.5-44V",
+      "logic_voltage": "2.7-5.5V",
+      "continuous_current": "3.5A"
+    },
+    "physical_specs": {},
+    "performance_specs": {
+      "channels": 1,
+      "pwm_control": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_types": ["brushed_dc"],
+      "microcontroller_logic": true,
+      "esp32_compatible": true
+    },
+    "constraints": {
+      "single_motor_channel": true,
+      "thermal_management_required_at_high_current": true
+    },
+    "estimated_cost": 400,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["DRV8871", "TB6612FNG"]
+  }
+]
