@@ -1,0 +1,895 @@
+[
+  {
+    "name": "N20 Micro Gear Motor",
+    "part_number": "N20-6V-100RPM",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Compact brushed DC gear motor suitable for small robotic platforms and mechanisms.",
+    "functions": [
+      "rotational motion",
+      "robot locomotion",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "mobile robots",
+      "robotic arms",
+      "small automation systems",
+      "educational robotics"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "6V",
+      "motor_type": "brushed_dc",
+      "nominal_current": "150mA",
+      "stall_current": "1.5A"
+    },
+    "physical_specs": {
+      "gearbox": "metal",
+      "shaft_type": "D-shaft"
+    },
+    "performance_specs": {
+      "speed": "100RPM",
+      "torque": "0.8kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "N20 Micro Gear Motor 200RPM"
+    ]
+  },
+  {
+    "name": "N20 Micro Gear Motor 200RPM",
+    "part_number": "N20-6V-200RPM",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Higher-speed compact brushed DC gear motor for lightweight mobile robots.",
+    "functions": [
+      "rotational motion",
+      "robot locomotion"
+    ],
+    "applications": [
+      "mobile robots",
+      "line follower robots",
+      "small automation systems"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "6V",
+      "motor_type": "brushed_dc",
+      "nominal_current": "180mA",
+      "stall_current": "1.8A"
+    },
+    "physical_specs": {
+      "gearbox": "metal",
+      "shaft_type": "D-shaft"
+    },
+    "performance_specs": {
+      "speed": "200RPM",
+      "torque": "0.5kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "N20 Micro Gear Motor"
+    ]
+  },
+  {
+    "name": "TT Gear Motor",
+    "part_number": "TT-6V-200RPM",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Plastic gearbox DC motor widely used for educational and small autonomous robots.",
+    "functions": [
+      "robot locomotion",
+      "rotational motion"
+    ],
+    "applications": [
+      "line follower robots",
+      "obstacle avoiding robots",
+      "educational robotics"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "3-9V",
+      "motor_type": "brushed_dc",
+      "nominal_voltage": "6V"
+    },
+    "physical_specs": {
+      "gearbox": "plastic",
+      "wheel_mounting": true
+    },
+    "performance_specs": {
+      "speed": "200RPM",
+      "torque": "1.2kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 120,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "TT Gear Motor 300RPM"
+    ]
+  },
+  {
+    "name": "TT Gear Motor 300RPM",
+    "part_number": "TT-6V-300RPM",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "High-speed TT gearbox motor for small mobile robotic platforms.",
+    "functions": [
+      "robot locomotion",
+      "rotational motion"
+    ],
+    "applications": [
+      "mobile robots",
+      "line follower robots",
+      "educational robotics"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "3-9V",
+      "motor_type": "brushed_dc",
+      "nominal_voltage": "6V"
+    },
+    "physical_specs": {
+      "gearbox": "plastic",
+      "wheel_mounting": true
+    },
+    "performance_specs": {
+      "speed": "300RPM",
+      "torque": "0.8kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 130,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "TT Gear Motor"
+    ]
+  },
+  {
+    "name": "JGA25-370 DC Gear Motor",
+    "part_number": "JGA25-370-12V",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Medium-duty metal gearbox DC motor providing higher torque for robotic platforms.",
+    "functions": [
+      "robot locomotion",
+      "high torque rotation",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "mobile robots",
+      "robotic platforms",
+      "automation mechanisms"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "12V",
+      "motor_type": "brushed_dc",
+      "nominal_current": "500mA",
+      "stall_current": "4A"
+    },
+    "physical_specs": {
+      "gearbox": "metal",
+      "shaft_type": "D-shaft"
+    },
+    "performance_specs": {
+      "speed": "100RPM",
+      "torque": "8kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "high_current_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true,
+      "high_current": true
+    },
+    "estimated_cost": 850,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "JGA25-370 12V 200RPM"
+    ]
+  },
+  {
+    "name": "JGA25-370 DC Gear Motor 200RPM",
+    "part_number": "JGA25-370-12V-200",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Medium-duty high-speed metal gearbox DC motor for robotic locomotion.",
+    "functions": [
+      "robot locomotion",
+      "rotational motion"
+    ],
+    "applications": [
+      "mobile robots",
+      "robotic platforms",
+      "automation"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "12V",
+      "motor_type": "brushed_dc",
+      "nominal_current": "700mA",
+      "stall_current": "5A"
+    },
+    "physical_specs": {
+      "gearbox": "metal",
+      "shaft_type": "D-shaft"
+    },
+    "performance_specs": {
+      "speed": "200RPM",
+      "torque": "4kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "high_current_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true,
+      "high_current": true
+    },
+    "estimated_cost": 900,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "JGA25-370 DC Gear Motor"
+    ]
+  },
+  {
+    "name": "GA12-N20 Metal Gear Motor",
+    "part_number": "GA12-N20-6V",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Small metal gearbox motor designed for compact robotic mechanisms.",
+    "functions": [
+      "rotational motion",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "robotic arms",
+      "small mobile robots",
+      "camera mechanisms"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "6V",
+      "motor_type": "brushed_dc"
+    },
+    "physical_specs": {
+      "gearbox": "metal",
+      "shaft_type": "D-shaft"
+    },
+    "performance_specs": {
+      "speed": "150RPM",
+      "torque": "1.5kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 300,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "N20 Micro Gear Motor"
+    ]
+  },
+  {
+    "name": "Pololu 25D Metal Gearmotor",
+    "part_number": "25D-12V-100RPM",
+    "manufacturer": "Pololu",
+    "category": "motors",
+    "subcategory": "dc_gear_motor",
+    "description": "Robotics-grade metal gearmotor designed for higher reliability and torque.",
+    "functions": [
+      "robot locomotion",
+      "high torque rotation"
+    ],
+    "applications": [
+      "mobile robots",
+      "robotic platforms",
+      "automation systems"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "12V",
+      "motor_type": "brushed_dc"
+    },
+    "physical_specs": {
+      "gearbox": "metal",
+      "shaft_type": "D-shaft"
+    },
+    "performance_specs": {
+      "speed": "100RPM",
+      "torque": "10kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true,
+      "encoder_available": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 2200,
+    "currency": "INR",
+    "availability": {
+      "status": "moderate"
+    },
+    "alternatives": [
+      "JGA25-370 DC Gear Motor"
+    ]
+  },
+  {
+    "name": "DC Motor 130 Size",
+    "part_number": "130-3V-6V",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_motor",
+    "description": "Small brushed DC motor for simple rotating mechanisms and educational projects.",
+    "functions": [
+      "rotational motion",
+      "fan operation",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "educational robotics",
+      "small mechanisms",
+      "toy projects"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "3-6V",
+      "motor_type": "brushed_dc"
+    },
+    "physical_specs": {
+      "motor_size": "130"
+    },
+    "performance_specs": {
+      "speed": "12000RPM"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true,
+      "low_torque": true
+    },
+    "estimated_cost": 60,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "N20 Micro Gear Motor"
+    ]
+  },
+  {
+    "name": "RS-775 DC Motor",
+    "part_number": "RS-775-12V",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_motor",
+    "description": "High-power brushed DC motor for demanding mechanical applications.",
+    "functions": [
+      "high speed rotation",
+      "high power actuation"
+    ],
+    "applications": [
+      "robotic platforms",
+      "power tools",
+      "high-power mechanisms"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "12V",
+      "motor_type": "brushed_dc",
+      "stall_current": "20A"
+    },
+    "physical_specs": {
+      "motor_size": "775"
+    },
+    "performance_specs": {
+      "speed": "10000RPM",
+      "high_power": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "high_current_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true,
+      "high_current": true
+    },
+    "estimated_cost": 450,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "RS-550 DC Motor"
+    ]
+  },
+  {
+    "name": "RS-550 DC Motor",
+    "part_number": "RS-550-12V",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "dc_motor",
+    "description": "Medium-power brushed DC motor suitable for mechanical and robotic applications.",
+    "functions": [
+      "rotational motion",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "robotics",
+      "automation",
+      "small machines"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "12V",
+      "motor_type": "brushed_dc",
+      "stall_current": "10A"
+    },
+    "physical_specs": {
+      "motor_size": "550"
+    },
+    "performance_specs": {
+      "speed": "10000RPM"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "high_current_driver_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true,
+      "high_current": true
+    },
+    "estimated_cost": 300,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "RS-775 DC Motor"
+    ]
+  },
+  {
+    "name": "BLDC 2212 Motor",
+    "part_number": "2212-1000KV",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "bldc_motor",
+    "description": "Brushless DC motor commonly used in drones, mobile platforms, and high-speed applications.",
+    "functions": [
+      "high speed rotation",
+      "propulsion"
+    ],
+    "applications": [
+      "drones",
+      "robotic vehicles",
+      "aerial robotics"
+    ],
+    "interfaces": [
+      "3-phase motor"
+    ],
+    "electrical_specs": {
+      "voltage": "7.4-14.8V",
+      "motor_type": "bldc",
+      "kv_rating": "1000KV"
+    },
+    "physical_specs": {
+      "motor_mounting": "standard_2212"
+    },
+    "performance_specs": {
+      "speed": "1000KV",
+      "high_speed": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "esc_required": true,
+      "three_phase_driver_required": true
+    },
+    "constraints": {
+      "requires_external_esc": true
+    },
+    "estimated_cost": 700,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "BLDC 2205 Motor"
+    ]
+  },
+  {
+    "name": "BLDC 2205 Motor",
+    "part_number": "2205-2300KV",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "bldc_motor",
+    "description": "Compact high-speed brushless motor commonly used in small drones and robotic propulsion systems.",
+    "functions": [
+      "high speed rotation",
+      "propulsion"
+    ],
+    "applications": [
+      "drones",
+      "aerial robots",
+      "small propulsion systems"
+    ],
+    "interfaces": [
+      "3-phase motor"
+    ],
+    "electrical_specs": {
+      "voltage": "7.4-14.8V",
+      "motor_type": "bldc",
+      "kv_rating": "2300KV"
+    },
+    "physical_specs": {
+      "motor_mounting": "standard_2205"
+    },
+    "performance_specs": {
+      "speed": "2300KV",
+      "high_speed": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "esc_required": true,
+      "three_phase_driver_required": true
+    },
+    "constraints": {
+      "requires_external_esc": true
+    },
+    "estimated_cost": 750,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "BLDC 2212 Motor"
+    ]
+  },
+  {
+    "name": "NEMA 17 Stepper Motor",
+    "part_number": "NEMA17-42BYGH",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "stepper_motor",
+    "description": "Standard bipolar stepper motor for precise positioning and controlled rotational motion.",
+    "functions": [
+      "precise positioning",
+      "rotational motion"
+    ],
+    "applications": [
+      "3D printers",
+      "CNC machines",
+      "robotic mechanisms",
+      "linear actuators"
+    ],
+    "interfaces": [
+      "4-wire stepper"
+    ],
+    "electrical_specs": {
+      "motor_type": "bipolar_stepper",
+      "current_per_phase": "1.5A"
+    },
+    "physical_specs": {
+      "frame_size": "NEMA17"
+    },
+    "performance_specs": {
+      "step_angle": "1.8 degrees",
+      "holding_torque": "4kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "stepper_driver_required": true,
+      "step_direction_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 900,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "NEMA 23 Stepper Motor"
+    ]
+  },
+  {
+    "name": "NEMA 23 Stepper Motor",
+    "part_number": "NEMA23-57HS",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "stepper_motor",
+    "description": "High-torque stepper motor for CNC, robotics, and heavy positioning applications.",
+    "functions": [
+      "precise positioning",
+      "high torque rotation"
+    ],
+    "applications": [
+      "CNC machines",
+      "robotic arms",
+      "linear stages",
+      "automation"
+    ],
+    "interfaces": [
+      "4-wire stepper"
+    ],
+    "electrical_specs": {
+      "motor_type": "bipolar_stepper",
+      "current_per_phase": "2.8A"
+    },
+    "physical_specs": {
+      "frame_size": "NEMA23"
+    },
+    "performance_specs": {
+      "step_angle": "1.8 degrees",
+      "holding_torque": "15kg-cm"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "stepper_driver_required": true,
+      "step_direction_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true,
+      "high_current": true
+    },
+    "estimated_cost": 1600,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "NEMA 17 Stepper Motor"
+    ]
+  },
+  {
+    "name": "Linear Actuator 12V",
+    "part_number": "LA-12V-100MM",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "linear_actuator",
+    "description": "Electric linear actuator for controlled linear movement and mechanical positioning.",
+    "functions": [
+      "linear motion",
+      "positioning",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "robotic mechanisms",
+      "automation systems",
+      "adjustable platforms"
+    ],
+    "interfaces": [
+      "2-wire motor"
+    ],
+    "electrical_specs": {
+      "voltage": "12V",
+      "motor_type": "dc_linear_actuator"
+    },
+    "physical_specs": {
+      "stroke": "100mm"
+    },
+    "performance_specs": {
+      "force": "100N",
+      "speed": "10mm/s"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "motor_driver_required": true,
+      "h_bridge_required": true,
+      "pwm_control": true
+    },
+    "constraints": {
+      "requires_limit_control": true,
+      "requires_external_driver": true
+    },
+    "estimated_cost": 1800,
+    "currency": "INR",
+    "availability": {
+      "status": "moderate"
+    },
+    "alternatives": [
+      "Lead Screw Stepper Assembly"
+    ]
+  },
+  {
+    "name": "28BYJ-48 Stepper Motor",
+    "part_number": "28BYJ-48-5V",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "stepper_motor",
+    "description": "Compact geared unipolar stepper motor commonly used in small positioning mechanisms and educational robotics.",
+    "functions": [
+      "precise positioning",
+      "rotational motion",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "robotic mechanisms",
+      "camera platforms",
+      "small automation",
+      "educational robotics"
+    ],
+    "interfaces": [
+      "4-phase motor"
+    ],
+    "electrical_specs": {
+      "voltage": "5V",
+      "motor_type": "unipolar_stepper",
+      "current": "240mA"
+    },
+    "physical_specs": {
+      "gearbox": "integrated_reduction_gearbox"
+    },
+    "performance_specs": {
+      "step_angle": "5.625 degrees before gearbox",
+      "reduction_ratio": "high",
+      "speed_class": "low_speed",
+      "torque_class": "low_torque"
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "stepper_driver_required": true,
+      "step_direction_control": true
+    },
+    "constraints": {
+      "requires_external_driver": true
+    },
+    "estimated_cost": 150,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "NEMA 17 Stepper Motor"
+    ]
+  },
+  {
+    "name": "MG996R Continuous Rotation Servo",
+    "part_number": "MG996R-CR",
+    "manufacturer": "Generic",
+    "category": "motors",
+    "subcategory": "continuous_rotation_servo",
+    "description": "High-torque continuous rotation servo suitable for mobile robot drive systems and continuous rotation mechanisms.",
+    "functions": [
+      "continuous rotation",
+      "robot locomotion",
+      "mechanism actuation"
+    ],
+    "applications": [
+      "mobile robots",
+      "robotic platforms",
+      "continuous rotation mechanisms"
+    ],
+    "interfaces": [
+      "PWM"
+    ],
+    "electrical_specs": {
+      "voltage": "4.8-7.2V",
+      "motor_type": "continuous_rotation_servo"
+    },
+    "physical_specs": {
+      "gears": "metal"
+    },
+    "performance_specs": {
+      "continuous_rotation": true,
+      "wheel_drive": true
+    },
+    "environmental_specs": {},
+    "compatibility": {
+      "servo_signal_pwm": true,
+      "controller_required": true
+    },
+    "constraints": {
+      "not_suitable_for_precise_absolute_positioning": true,
+      "high_current_demand": true
+    },
+    "estimated_cost": 650,
+    "currency": "INR",
+    "availability": {
+      "status": "high"
+    },
+    "alternatives": [
+      "Standard MG996R Servo"
+    ]
+  }
+]
