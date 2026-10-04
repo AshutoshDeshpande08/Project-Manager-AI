@@ -1,0 +1,744 @@
+[
+  {
+    "name": "DHT22",
+    "part_number": "AM2302",
+    "manufacturer": "Aosong",
+    "category": "sensors",
+    "subcategory": "temperature",
+    "description": "Digital temperature and relative humidity sensor for environmental monitoring.",
+    "functions": ["temperature measurement", "humidity measurement"],
+    "applications": ["weather monitoring", "IoT", "environmental monitoring", "home automation"],
+    "interfaces": ["single-wire digital"],
+    "electrical_specs": {
+      "operating_voltage": "3.3-6V",
+      "current_mA": 2.5
+    },
+    "physical_specs": {
+      "sensor_type": "digital environmental sensor"
+    },
+    "performance_specs": {
+      "temperature_range": "-40 to 80 C",
+      "temperature_accuracy": "±0.5 C",
+      "humidity_range": "0-100 %RH",
+      "humidity_accuracy": "±2-5 %RH"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 80 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V", "5V"],
+      "microcontrollers": ["Arduino", "ESP32", "STM32", "Raspberry Pi"],
+      "digital_interface": true
+    },
+    "constraints": {
+      "slow_sampling": true,
+      "not_suitable_for_fast_control": true
+    },
+    "estimated_cost": 150,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["BME280", "SHT31"]
+  },
+  {
+    "name": "BME280",
+    "part_number": "BME280",
+    "manufacturer": "Bosch Sensortec",
+    "category": "sensors",
+    "subcategory": "environmental",
+    "description": "Digital environmental sensor measuring temperature, humidity, and atmospheric pressure.",
+    "functions": ["temperature measurement", "humidity measurement", "pressure measurement"],
+    "applications": ["weather stations", "altitude estimation", "IoT", "robotics", "environmental monitoring"],
+    "interfaces": ["I2C", "SPI"],
+    "electrical_specs": {
+      "operating_voltage": "1.71-3.6V",
+      "logic_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "package": "LGA"
+    },
+    "performance_specs": {
+      "temperature_range": "-40 to 85 C",
+      "humidity_range": "0-100 %RH",
+      "pressure_range_hPa": "300-1100"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "interfaces": ["I2C", "SPI"],
+      "microcontrollers": ["ESP32", "STM32", "Arduino"]
+    },
+    "constraints": {
+      "not_5v_native": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["BMP280", "SHT31"]
+  },
+  {
+    "name": "BMP280",
+    "part_number": "BMP280",
+    "manufacturer": "Bosch Sensortec",
+    "category": "sensors",
+    "subcategory": "pressure",
+    "description": "Digital barometric pressure sensor suitable for altitude and environmental measurements.",
+    "functions": ["pressure measurement", "altitude estimation", "temperature measurement"],
+    "applications": ["altimeters", "weather stations", "drones", "robotics", "IoT"],
+    "interfaces": ["I2C", "SPI"],
+    "electrical_specs": {
+      "operating_voltage": "1.71-3.6V",
+      "logic_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "package": "LGA"
+    },
+    "performance_specs": {
+      "pressure_range_hPa": "300-1100",
+      "temperature_range": "-40 to 85 C"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "interfaces": ["I2C", "SPI"],
+      "microcontrollers": ["ESP32", "STM32", "Arduino"]
+    },
+    "constraints": {
+      "not_5v_native": true
+    },
+    "estimated_cost": 130,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["BME280"]
+  },
+  {
+    "name": "HC-SR04",
+    "part_number": "HC-SR04",
+    "manufacturer": "Generic",
+    "category": "sensors",
+    "subcategory": "ultrasonic",
+    "description": "Ultrasonic distance sensor using trigger and echo timing to measure object distance.",
+    "functions": ["distance measurement", "obstacle detection"],
+    "applications": ["robotics", "obstacle avoidance", "parking sensors", "automation"],
+    "interfaces": ["GPIO trigger", "GPIO echo"],
+    "electrical_specs": {
+      "operating_voltage": "5V",
+      "current_mA": 15
+    },
+    "physical_specs": {
+      "detection_angle_degrees": 15
+    },
+    "performance_specs": {
+      "distance_range_cm": "2-400",
+      "resolution_mm": 3
+    },
+    "environmental_specs": {
+      "operating_environment": "indoor and controlled outdoor"
+    },
+    "compatibility": {
+      "logic_levels": ["5V"],
+      "microcontrollers": ["Arduino", "ESP32", "STM32"],
+      "robotics": true,
+      "obstacle_detection": true
+    },
+    "constraints": {
+      "echo_voltage_5V": true,
+      "requires_level_shifting_for_3v3_input": true
+    },
+    "estimated_cost": 80,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["JSN-SR04T", "VL53L0X"]
+  },
+  {
+    "name": "VL53L0X",
+    "part_number": "VL53L0CXV0DH",
+    "manufacturer": "STMicroelectronics",
+    "category": "sensors",
+    "subcategory": "ToF",
+    "description": "Time-of-Flight laser ranging sensor for accurate short-range distance measurement.",
+    "functions": ["distance measurement", "proximity detection"],
+    "applications": ["robotics", "obstacle avoidance", "gesture detection", "automation"],
+    "interfaces": ["I2C"],
+    "electrical_specs": {
+      "operating_voltage": "2.6-3.5V",
+      "logic_voltage": "2.8-3.3V"
+    },
+    "physical_specs": {
+      "sensor_type": "laser ToF"
+    },
+    "performance_specs": {
+      "maximum_range_mm": 2000,
+      "measurement_principle": "time of flight"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-20 to 70 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "interfaces": ["I2C"],
+      "microcontrollers": ["ESP32", "STM32", "Arduino"]
+    },
+    "constraints": {
+      "performance_affected_by_target_surface": true
+    },
+    "estimated_cost": 350,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["VL53L1X", "HC-SR04"]
+  },
+  {
+    "name": "MPU6050",
+    "part_number": "MPU-6050",
+    "manufacturer": "TDK InvenSense",
+    "category": "sensors",
+    "subcategory": "IMU",
+    "description": "Six-axis inertial measurement unit combining a three-axis accelerometer and three-axis gyroscope.",
+    "functions": ["acceleration measurement", "angular velocity measurement", "motion sensing"],
+    "applications": ["robotics", "drones", "balancing robots", "motion tracking"],
+    "interfaces": ["I2C"],
+    "electrical_specs": {
+      "operating_voltage": "2.375-3.46V",
+      "logic_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "axes": 6
+    },
+    "performance_specs": {
+      "accelerometer_range": "±2/4/8/16 g",
+      "gyroscope_range": "±250/500/1000/2000 dps"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "interfaces": ["I2C"],
+      "microcontrollers": ["ESP32", "STM32", "Arduino"]
+    },
+    "constraints": {
+      "requires_sensor_fusion_for_orientation": true,
+      "gyro_drift": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["MPU9250", "ICM-20948"]
+  },
+  {
+    "name": "MPU9250",
+    "part_number": "MPU-9250",
+    "manufacturer": "TDK InvenSense",
+    "category": "sensors",
+    "subcategory": "IMU",
+    "description": "Nine-axis inertial sensor combining accelerometer, gyroscope, and magnetometer.",
+    "functions": ["acceleration measurement", "angular velocity measurement", "magnetic field measurement", "orientation estimation"],
+    "applications": ["robotics", "drones", "navigation", "motion tracking"],
+    "interfaces": ["I2C", "SPI"],
+    "electrical_specs": {
+      "operating_voltage": "2.4-3.6V",
+      "logic_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "axes": 9
+    },
+    "performance_specs": {
+      "accelerometer_range": "±2/4/8/16 g",
+      "gyroscope_range": "±250/500/1000/2000 dps",
+      "magnetometer_range": "±4800 uT"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "interfaces": ["I2C", "SPI"],
+      "microcontrollers": ["ESP32", "STM32"]
+    },
+    "constraints": {
+      "magnetometer_sensitive_to_magnetic_interference": true,
+      "requires_sensor_fusion": true
+    },
+    "estimated_cost": 450,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["ICM-20948", "MPU6050"]
+  },
+  {
+    "name": "LDR Photoresistor",
+    "part_number": "LDR-GL5528",
+    "manufacturer": "Generic",
+    "category": "sensors",
+    "subcategory": "light_optical",
+    "description": "Light-dependent resistor whose resistance varies with incident light intensity.",
+    "functions": ["light intensity measurement"],
+    "applications": ["automatic lighting", "light detection", "robotics", "IoT"],
+    "interfaces": ["analog"],
+    "electrical_specs": {
+      "operating_voltage": "3.3-5V"
+    },
+    "physical_specs": {
+      "sensor_type": "photoresistor"
+    },
+    "performance_specs": {
+      "dark_resistance": "1 Mohm",
+      "light_resistance": "5-10 kohm"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-30 to 70 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V", "5V"],
+      "analog_input_required": true
+    },
+    "constraints": {
+      "requires_voltage_divider": true,
+      "low_measurement_precision": true
+    },
+    "estimated_cost": 20,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["BH1750", "TSL2561"]
+  },
+  {
+    "name": "BH1750",
+    "part_number": "BH1750FVI",
+    "manufacturer": "ROHM",
+    "category": "sensors",
+    "subcategory": "light_optical",
+    "description": "Digital ambient light sensor providing illumination measurements in lux.",
+    "functions": ["ambient light measurement"],
+    "applications": ["smart lighting", "display brightness control", "IoT", "robotics"],
+    "interfaces": ["I2C"],
+    "electrical_specs": {
+      "operating_voltage": "2.4-3.6V",
+      "logic_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "sensor_type": "digital ambient light sensor"
+    },
+    "performance_specs": {
+      "measurement_unit": "lux",
+      "maximum_measurement": "65535 lux"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "interfaces": ["I2C"],
+      "microcontrollers": ["ESP32", "STM32", "Arduino"]
+    },
+    "constraints": {
+      "not_suitable_for_high_speed_measurement": true
+    },
+    "estimated_cost": 120,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["TSL2591", "LDR-GL5528"]
+  },
+  {
+    "name": "MQ-2 Gas Sensor",
+    "part_number": "MQ-2",
+    "manufacturer": "Hanwei",
+    "category": "sensors",
+    "subcategory": "gas",
+    "description": "Metal-oxide gas sensor module sensitive to smoke and combustible gases.",
+    "functions": ["gas detection", "smoke detection"],
+    "applications": ["gas leak detection", "fire warning", "industrial monitoring", "IoT"],
+    "interfaces": ["analog", "digital threshold"],
+    "electrical_specs": {
+      "operating_voltage": "5V",
+      "heater_power": "up to 800mW"
+    },
+    "physical_specs": {
+      "sensor_type": "metal oxide semiconductor"
+    },
+    "performance_specs": {
+      "target_gases": ["LPG", "methane", "propane", "smoke", "hydrogen"]
+    },
+    "environmental_specs": {
+      "operating_temperature": "-20 to 50 C"
+    },
+    "compatibility": {
+      "logic_levels": ["5V"],
+      "analog_input_required": true,
+      "microcontrollers": ["Arduino", "ESP32", "STM32"]
+    },
+    "constraints": {
+      "requires_warmup": true,
+      "high_power_consumption": true,
+      "poor_selectivity": true
+    },
+    "estimated_cost": 120,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["MQ-5", "MQ-135"]
+  },
+  {
+    "name": "MQ-135 Air Quality Sensor",
+    "part_number": "MQ-135",
+    "manufacturer": "Hanwei",
+    "category": "sensors",
+    "subcategory": "air_quality",
+    "description": "Metal-oxide gas sensor commonly used for detecting changes in air quality and pollutant gases.",
+    "functions": ["air quality monitoring", "gas detection"],
+    "applications": ["air quality monitoring", "IoT", "environmental monitoring"],
+    "interfaces": ["analog", "digital threshold"],
+    "electrical_specs": {
+      "operating_voltage": "5V",
+      "heater_power": "up to 800mW"
+    },
+    "physical_specs": {
+      "sensor_type": "metal oxide semiconductor"
+    },
+    "performance_specs": {
+      "target_gases": ["ammonia", "NOx", "alcohol", "benzene", "smoke", "CO2-related response"]
+    },
+    "environmental_specs": {
+      "operating_temperature": "-20 to 50 C"
+    },
+    "compatibility": {
+      "logic_levels": ["5V"],
+      "analog_input_required": true
+    },
+    "constraints": {
+      "requires_warmup": true,
+      "requires_calibration": true,
+      "not_a_precise_co2_sensor": true
+    },
+    "estimated_cost": 130,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["SGP30", "BME680"]
+  },
+  {
+    "name": "PIR Motion Sensor",
+    "part_number": "HC-SR501",
+    "manufacturer": "Generic",
+    "category": "sensors",
+    "subcategory": "motion",
+    "description": "Passive infrared motion sensor module for detecting movement of warm bodies.",
+    "functions": ["motion detection", "presence detection"],
+    "applications": ["security systems", "automation", "robotics", "smart lighting"],
+    "interfaces": ["digital GPIO"],
+    "electrical_specs": {
+      "operating_voltage": "5-20V",
+      "output_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "detection_angle_degrees": 120
+    },
+    "performance_specs": {
+      "detection_range_m": "3-7",
+      "delay_adjustment": true
+    },
+    "environmental_specs": {
+      "operating_environment": "indoor"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V"],
+      "digital_output": true,
+      "microcontrollers": ["Arduino", "ESP32", "STM32"]
+    },
+    "constraints": {
+      "detects_motion_not_exact_distance": true
+    },
+    "estimated_cost": 90,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["AM312"]
+  },
+  {
+    "name": "HC-SR501 Alternative AM312 PIR",
+    "part_number": "AM312",
+    "manufacturer": "Generic",
+    "category": "sensors",
+    "subcategory": "motion",
+    "description": "Compact low-power PIR motion sensor module for human presence and movement detection.",
+    "functions": ["motion detection", "presence detection"],
+    "applications": ["wearables", "IoT", "security", "automation"],
+    "interfaces": ["digital GPIO"],
+    "electrical_specs": {
+      "operating_voltage": "2.7-12V"
+    },
+    "physical_specs": {
+      "sensor_type": "PIR"
+    },
+    "performance_specs": {
+      "detection_range_m": "2-3",
+      "low_power": true
+    },
+    "environmental_specs": {
+      "operating_environment": "indoor"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V", "5V"],
+      "digital_output": true
+    },
+    "constraints": {
+      "detects_motion_not_distance": true
+    },
+    "estimated_cost": 70,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["HC-SR501"]
+  },
+  {
+    "name": "ACS712 5A",
+    "part_number": "ACS712ELCTR-05B",
+    "manufacturer": "Allegro MicroSystems",
+    "category": "sensors",
+    "subcategory": "current_voltage_power",
+    "description": "Hall-effect based isolated current sensor for AC and DC current measurement.",
+    "functions": ["current measurement", "power monitoring"],
+    "applications": ["battery monitoring", "motor current monitoring", "power supplies", "robotics"],
+    "interfaces": ["analog"],
+    "electrical_specs": {
+      "supply_voltage": "5V",
+      "measurement_range": "±5A"
+    },
+    "physical_specs": {
+      "isolation": "galvanic isolation"
+    },
+    "performance_specs": {
+      "sensitivity_mV_per_A": 185
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "analog_input_required": true,
+      "microcontrollers": ["Arduino", "ESP32", "STM32"]
+    },
+    "constraints": {
+      "requires_5V_supply": true,
+      "analog_offset": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["INA219", "INA226"]
+  },
+  {
+    "name": "INA219",
+    "part_number": "INA219",
+    "manufacturer": "Texas Instruments",
+    "category": "sensors",
+    "subcategory": "current_voltage_power",
+    "description": "Digital current and bus voltage monitor with I2C interface.",
+    "functions": ["current measurement", "voltage measurement", "power measurement"],
+    "applications": ["battery monitoring", "robotics", "power management", "IoT"],
+    "interfaces": ["I2C"],
+    "electrical_specs": {
+      "supply_voltage": "3-5.5V",
+      "bus_voltage_max": "26V"
+    },
+    "physical_specs": {
+      "sensor_type": "current shunt monitor"
+    },
+    "performance_specs": {
+      "measurement": ["current", "bus voltage", "power"]
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 125 C"
+    },
+    "compatibility": {
+      "interfaces": ["I2C"],
+      "logic_levels": ["3.3V", "5V"],
+      "microcontrollers": ["ESP32", "Arduino", "STM32"]
+    },
+    "constraints": {
+      "requires_external_shunt": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["INA226", "ACS712"]
+  },
+  {
+    "name": "NEO-6M GPS",
+    "part_number": "NEO-6M",
+    "manufacturer": "u-blox",
+    "category": "sensors",
+    "subcategory": "GPS_GNSS",
+    "description": "GNSS receiver module providing position, velocity, and timing information.",
+    "functions": ["position estimation", "velocity measurement", "time synchronization"],
+    "applications": ["robot navigation", "drones", "vehicle tracking", "asset tracking"],
+    "interfaces": ["UART"],
+    "electrical_specs": {
+      "operating_voltage": "3.0-3.6V",
+      "module_supply": "5V typical breakout"
+    },
+    "physical_specs": {
+      "antenna": "external ceramic antenna"
+    },
+    "performance_specs": {
+      "position_accuracy": "approximately 2.5m",
+      "receiver_type": "GPS"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "interfaces": ["UART"],
+      "logic_levels": ["3.3V"],
+      "microcontrollers": ["ESP32", "Arduino", "STM32"],
+      "robot_navigation": true
+    },
+    "constraints": {
+      "requires_clear_sky": true,
+      "poor_indoor_performance": true
+    },
+    "estimated_cost": 650,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["NEO-M8N"]
+  },
+  {
+    "name": "TCRT5000",
+    "part_number": "TCRT5000",
+    "manufacturer": "Vishay",
+    "category": "sensors",
+    "subcategory": "proximity_IR",
+    "description": "Reflective optical sensor for short-range object and line detection.",
+    "functions": ["proximity detection", "line detection", "reflectivity detection"],
+    "applications": ["line following robots", "encoders", "object detection", "automation"],
+    "interfaces": ["analog", "digital threshold"],
+    "electrical_specs": {
+      "forward_voltage": "1.25V typical",
+      "supply_voltage": "5V typical module"
+    },
+    "physical_specs": {
+      "sensor_type": "IR reflective"
+    },
+    "performance_specs": {
+      "detection_distance_mm": "0.2-15"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-25 to 85 C"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V", "5V"],
+      "analog_output": true,
+      "digital_output": true
+    },
+    "constraints": {
+      "affected_by_surface_reflectivity": true
+    },
+    "estimated_cost": 30,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["QRE1113"]
+  },
+  {
+    "name": "QRE1113 Reflective Sensor",
+    "part_number": "QRE1113GR",
+    "manufacturer": "onsemi",
+    "category": "sensors",
+    "subcategory": "proximity_IR",
+    "description": "Compact reflective optical sensor suitable for line detection and encoder applications.",
+    "functions": ["line detection", "proximity detection", "encoder sensing"],
+    "applications": ["line following robots", "wheel encoders", "object detection"],
+    "interfaces": ["analog"],
+    "electrical_specs": {
+      "supply_voltage": "4.5-16V"
+    },
+    "physical_specs": {
+      "sensor_type": "reflective optical"
+    },
+    "performance_specs": {
+      "detection_distance_mm": "approximately 0.5-6"
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "analog_output": true,
+      "microcontrollers": ["Arduino", "ESP32", "STM32"]
+    },
+    "constraints": {
+      "requires_signal_conditioning": true,
+      "surface_dependent": true
+    },
+    "estimated_cost": 40,
+    "currency": "INR",
+    "availability": {"status": "moderate"},
+    "alternatives": ["TCRT5000"]
+  },
+  {
+    "name": "SW-420 Vibration Sensor",
+    "part_number": "SW-420",
+    "manufacturer": "Generic",
+    "category": "sensors",
+    "subcategory": "vibration",
+    "description": "Mechanical vibration and shock detection sensor module.",
+    "functions": ["vibration detection", "shock detection"],
+    "applications": ["tamper detection", "machine monitoring", "robotics", "security"],
+    "interfaces": ["digital GPIO"],
+    "electrical_specs": {
+      "operating_voltage": "3.3-5V"
+    },
+    "physical_specs": {
+      "sensor_type": "mechanical vibration switch"
+    },
+    "performance_specs": {
+      "output": "digital threshold"
+    },
+    "environmental_specs": {
+      "operating_environment": "general embedded environments"
+    },
+    "compatibility": {
+      "logic_levels": ["3.3V", "5V"],
+      "digital_output": true
+    },
+    "constraints": {
+      "poor_quantitative_measurement": true,
+      "mechanical_switch_behavior": true
+    },
+    "estimated_cost": 30,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["ADXL345"]
+  },
+  {
+    "name": "ADXL345",
+    "part_number": "ADXL345",
+    "manufacturer": "Analog Devices",
+    "category": "sensors",
+    "subcategory": "accelerometer",
+    "description": "Low-power three-axis digital accelerometer for motion and tilt sensing.",
+    "functions": ["acceleration measurement", "tilt detection", "motion detection"],
+    "applications": ["robotics", "wearables", "motion detection", "condition monitoring"],
+    "interfaces": ["I2C", "SPI"],
+    "electrical_specs": {
+      "operating_voltage": "2.0-3.6V",
+      "logic_voltage": "3.3V"
+    },
+    "physical_specs": {
+      "axes": 3
+    },
+    "performance_specs": {
+      "measurement_range": "±2/4/8/16 g",
+      "resolution_bits": 13
+    },
+    "environmental_specs": {
+      "operating_temperature": "-40 to 85 C"
+    },
+    "compatibility": {
+      "interfaces": ["I2C", "SPI"],
+      "logic_levels": ["3.3V"],
+      "microcontrollers": ["ESP32", "STM32", "Arduino"]
+    },
+    "constraints": {
+      "cannot_measure_angular_velocity": true
+    },
+    "estimated_cost": 180,
+    "currency": "INR",
+    "availability": {"status": "widely_available"},
+    "alternatives": ["MPU6050", "LIS3DH"]
+  }
+]
